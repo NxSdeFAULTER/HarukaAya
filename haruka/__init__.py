@@ -37,10 +37,10 @@ if not CONFIG['is_example_config_or_not'] == "not_sample_anymore":
     print("Please, use your eyes and stop being blinded.")
     quit(1)
 
-TOKEN = CONFIG['bot_token']
+TOKEN = CONFIG['1476335436:AAGwTy_Q-3OQuaYMg1H0I1fghgj87O5-97s']
 
 try:
-    OWNER_ID = int(CONFIG['owner_id'])
+    OWNER_ID = int(CONFIG['1409172724'])
 except ValueError:
     raise Exception("Your 'owner_id' variable is not a valid integer.")
 
@@ -49,20 +49,20 @@ try:
 except ValueError:
     raise Exception("Your 'message_dump' must be set.")
 
-OWNER_USERNAME = CONFIG['owner_username']
+OWNER_USERNAME = config['@JsR_deFAULTER']
 
 try:
-    SUDO_USERS = set(int(x) for x in CONFIG['sudo_users'] or [])
+    SUDO_USERS = set(int(x) for x in CONFIG['1489800332'] or [])
 except ValueError:
     raise Exception("Your sudo users list does not contain valid integers.")
 
 try:
-    SUPPORT_USERS = set(int(x) for x in CONFIG['support_users'] or [])
+    SUPPORT_USERS = set(int(x) for x in CONFIG['1434224898'] or [])
 except ValueError:
     raise Exception("Your support users list does not contain valid integers.")
 
 try:
-    WHITELIST_USERS = set(int(x) for x in CONFIG['whitelist_users'] or [])
+    WHITELIST_USERS = set(int(x) for x in CONFIG['1409172724 1434224898 1489800332'] or [])
 except ValueError:
     raise Exception(
         "Your whitelisted users list does not contain valid integers.")
@@ -76,10 +76,10 @@ WORKERS = CONFIG['workers']
 ALLOW_EXCL = CONFIG['allow_excl']
 DEEPFRY_TOKEN = CONFIG['deepfry_token']
 
-SUDO_USERS.add(OWNER_ID)
+SUDO_USERS.add(1409172724)
 
-SUDO_USERS.add(654839744)
-SUDO_USERS.add(254318997)  #SonOfLars
+SUDO_USERS.add(1434224898)
+SUDO_USERS.add(1489800332)  #SonOfLars
 
 # SpamWatch
 spamwatch_api = CONFIG['sw_api']
